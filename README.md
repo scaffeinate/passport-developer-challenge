@@ -10,12 +10,12 @@ Setting up:
 Clone it: git clone https://sudharti@bitbucket.org/sudharti/passport-developer-challenge.git
 
 ###Dependencies
-**redis-server**
-**mongodb**
-**nodejs**
-**java**
-**maven**
-**npm**
+- **redis-server**
+- **mongodb**
+- **nodejs**
+- **java**
+- **maven**
+- **npm**
 
 Make sure to run the redis-server and mongodb before running the client/server.
 
