@@ -1,0 +1,36 @@
+{
+  "name": "factory-tree-client",
+  "version": "1.0.0",
+  "description": "Live updating tree",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/sudharti/factory-tree-client.git"
+  },
+  "keywords": [
+    "node.js",
+    "bootstrap",
+    "tree",
+    "socket",
+    "express"
+  ],
+  "author": "Sudharsanan Muralidharan",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/sudharti/factory-tree-client#readme",
+  "dependencies": {
+    "config": "^1.21.0",
+    "express": "^4.14.0",
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "redis": "^2.6.2",
+    "socket.io": "1.4.5"
+  }
+}

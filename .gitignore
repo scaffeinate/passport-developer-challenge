@@ -1,0 +1,26 @@
+# Eclipse
+factory-tree-api/.classpath
+# Intellij
+factory-tree-api/.idea/
+*.iml
+*.iws
+
+# Mac
+factory-tree-api/.DS_Store
+
+# Maven
+factory-tree-api/log/
+factory-tree-api/target/
+
+.DS_Store
+factory-tree-client/node_modules
+factory-tree-client/.npm-debug.log
+factory-tree-client/tmp
+factory-tree-client/.sass-cache
+*.css.map
+factory-tree-client/bower_components
+factory-tree-client/public/js/min/
+factory-tree-client/public/js/production.js
+factory-tree-client/public/css/min
+factory-tree-client/public/css/production.css
+factory-tree-client/.DS_Store
