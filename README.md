@@ -34,13 +34,14 @@ For Production there are a few variables to set in the configuration:
 
 ### Client:
 Under factory-tree-client/config/production.json set the following under <>
-
+```
 {
   "redisHost": "<host>",
   "redisPort": 6379,
   "redisPassword": "<password>",
   "serverHost": "<serverHost>"
 }
+```
 
 Run the app for production using
 ```
@@ -50,6 +51,7 @@ NODE_ENV=production node server.js
 ### Server API:
 Under factory-tree-api/src/main/resources/application-prod.properties set the missing variables under []
 
+```
 spring.data.mongodb.host=[hostIp]
 spring.data.mongodb.database=[dbName]
 spring.data.mongodb.username=[username]
@@ -60,10 +62,13 @@ cors.allowed-origins=[client_base]
 jedis.host=[redisHost]
 jedis.port=6379
 jedis.password=[redisPassword]
+```
 
-Build using mvn clean install.
+Build using ```mvn clean install```
 
-To run use java -jar target/factory-tree.jar --spring.profiles.active=prod
+To run use
+```java -jar target/factory-tree.jar --spring.profiles.active=prod```
 
 
+### Procfile:
 Also check the Procfile under factory-tree-api and factory-tree-client to check for Production commands.
