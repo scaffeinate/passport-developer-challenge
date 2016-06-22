@@ -1,21 +1,36 @@
 # passport-developer-challenge
 Passport.inc Developer challenge - Live updating Tree application - Full Stack
+Deployed Version at: https://passport-factory.herokuapp.com/
 
 Documentation: Passport.inc-Developer-Challenge.pdf
 
 Setting up:
 -----------
 
+Clone it: git clone https://sudharti@bitbucket.org/sudharti/passport-developer-challenge.git
+
 ###Dependencies
-**redis-server**
-**mongodb**
+- **redis-server**
+- **mongodb**
+- **nodejs**
+- **java**
+- **maven**
+- **npm**
 
 Make sure to run the redis-server and mongodb before running the client/server.
+
+### Before running the Client:
+```
+npm install -g grunt
+```
+
+Start Redis at 6379 and MongoDB database in default port.
 
 ###To run the Client:
 ```
 cd factory-tree-client
 npm install
+grunt
 node server.js
 ```
 
@@ -25,8 +40,6 @@ cd factory-tree-api
 mvn clean install
 java -jar target/factory-tree.jar
 ```
-
-Deployed Version at: https://passport-factory.herokuapp.com/
 
 
 ## Configuring for Production
@@ -42,6 +55,8 @@ Under factory-tree-client/config/production.json set the following under <>
   "serverHost": "<serverHost>"
 }
 ```
+
+Visit http://localhost:3000
 
 Run the app for production using
 ```
