@@ -8,9 +8,9 @@ var Util = (function() {
 
   var getFields = function(formName) {
     var form = '#' + formName;
-    var factoryName = $(form + ' #factory-name').val();
-    var lowerBound = $(form + ' #lower-bound').val();
-    var upperBound = $(form + ' #upper-bound').val();
+    var factoryName = stripTags($(form + ' #factory-name').val());
+    var lowerBound = stripTags($(form + ' #lower-bound').val());
+    var upperBound = stripTags($(form + ' #upper-bound').val());
 
     var factory = new Factory(factoryName, lowerBound, upperBound);
     return factory;
@@ -21,6 +21,12 @@ var Util = (function() {
     $(form + ' #factory-name').val('');
     $(form + ' #lower-bound').val('');
     $(form + ' #upper-bound').val('');
+  };
+
+
+  var stripTags = function(content) {
+    var regex = /(<([^>]+)>)/ig;
+    return content.replace(regex, '');
   };
 
   var setMenu = function(target) {

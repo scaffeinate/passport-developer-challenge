@@ -1,6 +1,6 @@
 {
-  "redisHost": "<host>",
+  "redisHost": "52.205.1.181",
   "redisPort": 6379,
-  "redisPassword": "<password>",
-  "serverHost": "<serverHost>"
+  "redisPassword": "passport@test",
+  "serverHost": "https://factory-passport-api.herokuapp.com/factories/"
 }

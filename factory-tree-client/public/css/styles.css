@@ -85,24 +85,6 @@ ul.list-group {
   font-weight: bold;
 }
 
-.badge {
-  background: #fff;
-  border-radius: 1px;
-  color: #505050;
-  padding: 3px 5px 3px 3px;
-  border: 1px solid #c0c0c0;
-}
-
-.count {
-  padding: 4px 0;
-  width: 22px;
-  text-align: center;
-  background-color: #252e30;
-  border: 0;
-  font-size: 1.1rem;
-  color: #fff;
-}
-
 .list-group-item {
   margin-top: 10px;
   margin-left: 20px;
