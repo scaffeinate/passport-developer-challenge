@@ -4,6 +4,18 @@ Deployed Version at: https://passport-factory.herokuapp.com/
 
 Documentation: Passport.inc-Developer-Challenge.pdf
 
+Development Stack:
+------------------
+- Spring 4 & Spring Boot
+- Mongo DB
+- Redis
+- Node.js + Express Frontend
+- Socket.io to Handle Real-time updates
+- Twitter Bootstrap 3
+- NPM and Maven for Dependency Management
+- Grunt.js for Tasks
+- Heroku & AWS for Deployment
+
 Setting up:
 -----------
 
